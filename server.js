@@ -8,6 +8,29 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
+app.get('/storypanelone', function(req, res) {
+    res.sendFile(path.join(__dirname + '/public/storypanelone.html'));
+});
+app.get('/storypaneltwo', function(req, res) {
+    res.sendFile(path.join(__dirname + '/public/storypaneltwo.html'));
+});
+app.get('/storypanelthree', function(req, res) {
+    res.sendFile(path.join(__dirname + '/public/storypanelthree.html'));
+});
+app.get('/storypanelthree', function(req, res) {
+    res.sendFile(path.join(__dirname + '/public/storypanelthree.html'));
+});
+app.get('/storypanelfour', function(req, res) {
+    res.sendFile(path.join(__dirname + '/public/storypanelfour.html'));
+});
+app.get('/storypanelfive', function(req, res) {
+    res.sendFile(path.join(__dirname + '/public/storypanelfive.html'));
+});
+
+app.get('/index.css', function(req, res) {
+    res.sendFile(path.join(__dirname + '/public/stylesheets/index.css'));
+});
+
 app.use(express.static('public'));
 
 app.listen(app.get('port'), function() {
