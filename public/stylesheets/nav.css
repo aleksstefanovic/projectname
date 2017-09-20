@@ -1,15 +1,8 @@
-html, body {
+.black a {
     background-color: black;
-}
-
-.dark-green {
     color: green;
 }
 
-.dark-green:hover {
+.black a:hover {
     background-color: #2e5134;
-}
-
-.grey {
-    color: grey;
 }

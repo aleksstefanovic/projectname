@@ -9,26 +9,22 @@ app.get('/', function(req, res) {
 });
 
 app.get('/storypanelone', function(req, res) {
-    res.sendFile(path.join(__dirname + '/public/storypanelone.html'));
+    res.sendFile(path.join(__dirname + '/public/content/storypanelone.html'));
 });
 app.get('/storypaneltwo', function(req, res) {
-    res.sendFile(path.join(__dirname + '/public/storypaneltwo.html'));
+    res.sendFile(path.join(__dirname + '/public/content/storypaneltwo.html'));
 });
 app.get('/storypanelthree', function(req, res) {
-    res.sendFile(path.join(__dirname + '/public/storypanelthree.html'));
+    res.sendFile(path.join(__dirname + '/public/content/storypanelthree.html'));
 });
 app.get('/storypanelthree', function(req, res) {
-    res.sendFile(path.join(__dirname + '/public/storypanelthree.html'));
+    res.sendFile(path.join(__dirname + '/public/content/storypanelthree.html'));
 });
 app.get('/storypanelfour', function(req, res) {
-    res.sendFile(path.join(__dirname + '/public/storypanelfour.html'));
+    res.sendFile(path.join(__dirname + '/public/content/storypanelfour.html'));
 });
 app.get('/storypanelfive', function(req, res) {
-    res.sendFile(path.join(__dirname + '/public/storypanelfive.html'));
-});
-
-app.get('/index.css', function(req, res) {
-    res.sendFile(path.join(__dirname + '/public/stylesheets/index.css'));
+    res.sendFile(path.join(__dirname + '/public/content/storypanelfive.html'));
 });
 
 app.use(express.static('public'));
