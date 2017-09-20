@@ -6,10 +6,31 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="js/nav.js"></script>
+        <script src="js/pages/storypanelthree.js"></script>
     </head>
     <body>
         <div id="nav"></div>
+
         <div class="container-fluid">
+            <blockquote class="blockquote text-right grey">
+                <p class="mb-o">Count numbers: <output id="result"></output></p>
+                <ul class="list-group dark-green-bk">
+                  <li class="list-group-item">1)</li>
+                  <li class="list-group-item">2)</li>
+                  <li class="list-group-item">3)</li>
+                  <li class="list-group-item">4)</li>
+                  <li class="list-group-item">5)</li>
+                </ul>
+                <footer class="blockquote-footer"><cite title="Entity">Entity</cite></footer>
+            </blockquote>
+
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" aria-describedby="choice" placeholder="Enter choice">
+                <small id="yourChoice" class="form-text text-muted">Make a choice...</small>
+              </div>
+              <button type="submit" class="btn btn-success dark-green">Submit</button>
+            </form>
         </div>
     </body>
 

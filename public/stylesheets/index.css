@@ -6,10 +6,23 @@ html, body {
     color: green;
 }
 
+
+.dark-green-bk li {
+    background-color: green;
+}
+
 .dark-green:hover {
     background-color: #2e5134;
 }
 
 .grey {
     color: grey;
+}
+
+.flip {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 }

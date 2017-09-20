@@ -26,6 +26,9 @@ app.get('/storypanelfour', function(req, res) {
 app.get('/storypanelfive', function(req, res) {
     res.sendFile(path.join(__dirname + '/public/content/storypanelfive.html'));
 });
+app.get('/end', function(req, res) {
+    res.sendFile(path.join(__dirname + '/public/content/end.html'));
+});
 
 app.use(express.static('public'));
 
