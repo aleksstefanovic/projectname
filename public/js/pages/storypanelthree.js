@@ -17,4 +17,18 @@ if (typeof(Worker) !== "undefined") {
 function stopWorker() {
     w.terminate();
     w = undefined;
+    localStorage.setItem("choiceTwo", "1");
+    var newLocation = location.replace("storypanelfour");
+    open(newLocation, "_self");
 }
+
+$(document).ready(function() {
+    var search = location.search;
+    if (search) {
+        var params = search.split("?");
+        var choiceParam = params[1];
+        var choiceParams = choiceParam.split("=");
+        var choice = choiceParams[1];
+        localStorage.setItem("choiceOne", choice);
+    }
+});
