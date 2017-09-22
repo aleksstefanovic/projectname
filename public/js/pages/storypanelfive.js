@@ -17,4 +17,7 @@ $(document).ready(function() {
         var canvasFour = choiceSubParams[3].split("=")[1]; 
         localStorage.setItem("canvasFour", canvasFour);
     }
+
+    var playerName = document.getElementById("playerName");
+    playerName.innerHTML = localStorage.getItem("choiceOne");
 });

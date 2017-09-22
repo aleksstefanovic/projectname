@@ -9,34 +9,54 @@ $(document).ready(function() {
         localStorage.setItem("choiceThree", choiceThree);
     }
 
-    var lat = document.getElementById("lat");
+    /*var lat = document.getElementById("lat");
     lat.innerHTML = localStorage.getItem("lat");
 
     var lng = document.getElementById("lng");
-    lng.innerHTML = localStorage.getItem("lng");
+    lng.innerHTML = localStorage.getItem("lng");*/
 
-    var choiceOne = document.getElementById("choiceOne");
-    choiceOne.innerHTML = localStorage.getItem("choiceOne");
-
-    var choiceTwo = document.getElementById("choiceTwo");
-    choiceTwo.innerHTML = localStorage.getItem("choiceTwo");
+    var choiceTwoNum = localStorage.getItem("choiceTwo");
 
     var choiceThree = document.getElementById("choiceThree");
-    choiceThree.innerHTML = localStorage.getItem("choiceThree");
 
-    var canvasOne = localStorage.getItem("canvasOne");
-    var canvasTwo = localStorage.getItem("canvasTwo");
-    var canvasThree = localStorage.getItem("canvasThree");
-    var canvasFour = localStorage.getItem("canvasFour");
+    if (choiceTwoNum === "1") {
+        choiceThree.innerHTML = "CRITICAL ERROR: Project Name Terminated by unknown entity";
+    }
+    else {
+        if (choiceTwoNum === "3") {
+            choiceThree.innerHTML = "People Pick Proper Pseudonyms for my Person";
+            var playerName = document.getElementById("playerName");
+            playerName.innerHTML = "Thing";
+        }
+        else {
+            var choiceThreeNum = localStorage.getItem("choiceThree");
+            if (choiceThreeNum === "1") {
+                choiceThree.innerHTML = "I have a name";
+            }
+            else if (choiceThreeNum === "2") {
+                choiceThree.innerHTML = "I have no name";
+            }
 
-    canvasOne = canvasOne.toLowerCase();
-    canvasTwo = canvasTwo.toLowerCase();
-    canvasThree = canvasThree.toLowerCase();
-    canvasFour = canvasFour.toLowerCase();
+            var playerName = document.getElementById("playerName");
+            playerName.innerHTML = localStorage.getItem("choiceOne");
+        }
 
-    var canvasArray = [canvasOne, canvasTwo, canvasThree, canvasFour];
+        var canvasOne = localStorage.getItem("canvasOne");
+        var canvasTwo = localStorage.getItem("canvasTwo");
+        var canvasThree = localStorage.getItem("canvasThree");
+        var canvasFour = localStorage.getItem("canvasFour");
 
-    drawCanvas (canvasArray);
+        canvasOne = canvasOne.toLowerCase();
+        canvasTwo = canvasTwo.toLowerCase();
+        canvasThree = canvasThree.toLowerCase();
+        canvasFour = canvasFour.toLowerCase();
+
+        var canvasArray = [canvasOne, canvasTwo, canvasThree, canvasFour];
+
+        drawCanvas (canvasArray);
+
+    }
+
 });
 
 
